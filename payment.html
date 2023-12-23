@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Payment Page</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/Payment/style.css">
         <link href="https://fonts.googleapis.com/css?family=Bitter|Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -40,19 +40,22 @@
             </div>
             <!-- FORMS FOR PAYMENT -->
             <div class="select-body">
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <button type="button" id="inform-pay">Informar dados</button>
-                </div>
+                </div> -->
                 
                 <!-- CRÉD CARD -->
                 <div class="select-body__content select-body--card is-active">
+                    <div class="text-center">
+                        <button type="button" id="inform-pix">Informar dados</button>
+                    </div>
                     <form id="payment-form">
                         <div class="col-md-12"><br>
                             <div class="card">
                                 <div class="card-body">
                                     <strong>PIX</strong><br>
                                     <label for="number" class="form-label">CPF:
-                                        <input type="text" class="form-control" id="number" placeholder="000.000.000-00">
+                                        <input type="text" class="form-control" id="number" placeholder="000.000.000-00" required>
                                     </label>
                                 </div>
                             </div>
@@ -63,11 +66,14 @@
                             </label>
                         </div>
                         <div class="col-12">
-                            <button type="submit" id="pay" class="btn btn-secondary">Pagar</button>
+                            <button type="submit" class="btn btn-secondary">Pagar</button>
                         </div>
                     </form>
                 </div>
                 <div class="select-body__content select-body--paypal">
+                    <div class="text-center">
+                        <button type="button" id="inform-pay">Informar dados</button>
+                    </div>
                     <form id="payment-form"><br>
                         <div id="credCard" class="card">
                             <div class="card-body row">
@@ -112,7 +118,7 @@
                             </label>
                         </div>
                         <div class="col-12">
-                            <button type="submit" id="pay" class="btn btn-secondary">Pagar</button>
+                            <button type="submit" class="btn btn-secondary">Pagar</button>
                         </div>
                     </form>
                 </div>

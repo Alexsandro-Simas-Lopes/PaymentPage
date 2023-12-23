@@ -1,4 +1,4 @@
-document.getElementById("inform-pay").addEventListener("click", function() {
+document.getElementById("inform-pix").addEventListener("click", function() {
   const amount = document.getElementById("pix-amount").value;
   if (amount === "") {
     alert("O campo valor deve ser preenchido.");
@@ -53,16 +53,6 @@ document.getElementById("inform-pay").addEventListener("click", function() {
   }
   document.getElementById("credit-card-total").textContent = `${text}R$${total.toFixed(2)}`;
 });
-
-document.getElementById("pay").addEventListener("click", function() { 
-  FormPay = document.getElementById('payment-form').value;
-  if (FormPay === "") {
-    alert("Todos os campos devem \n ser preenchidos.");
-    return;
-  } else
-  alert("Pagamento efetuado com sucesso.");
-});
-
 
 // Hosted fields example
 // var form = document.querySelector('#cardForm');
